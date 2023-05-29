@@ -1,3 +1,10 @@
+CREATE TABLE "prices"(
+  "user_id" SERIAL PRIMARY KEY NOT NULL,
+  "date" timestamp NOT NULL,
+  "price" float NOT NULL,
+  "symbol" varchar NOT NULL
+);
+
 CREATE TABLE "users" (
   "user_id" SERIAL PRIMARY KEY NOT NULL,
   "user_name" varchar NOT NULL,
